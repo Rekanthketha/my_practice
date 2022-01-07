@@ -33,6 +33,8 @@ resource "azurerm_virtual_network" "rk-vn" {
 
 resource "azurerm_subnet" "rk-subnet"{
 name = "rekanth-subnet"
+
+..............................
 resource_group_name = azurerm_resource_group.rk-rs.name
 virtual_network_name = azurerm_virtual_network.rk-vn.name
 address_prefixes = ["10.70.1.0/24"]
